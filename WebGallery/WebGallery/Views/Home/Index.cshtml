@@ -1,0 +1,28 @@
+﻿@using WebGallery.Models
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <div>
+        <h3>Cities</h3>
+        <table>
+            <tr class ="header">
+                <td><p>Name</p></td>
+                <td><p>FullName</p></td>
+                <td><p>State</p></td>
+                <td></td>
+            </tr>
+            @foreach (var b in ViewBag.Cities)
+            {
+                <tr>
+                    <td><p>@b.Name</p></td>
+                    <td><p>@b.FullName</p></td>
+                    <td><p>@b.State</p></td>
+                    <td>
+                        <p>
+                            <a href="/Home/Set/@b.Id">Change status to Visited</a>
+                        </p></td>
+                </tr>
+            }
+        </table>
+    </div>
