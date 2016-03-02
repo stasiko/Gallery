@@ -11,7 +11,8 @@ namespace WebGallery.Models
         public DbSet<City> Cities { get; set; }
         public DbSet<Continent> Continents { get; set; }
         public DbSet<Country> Countries { get; set; }
-
         public DbSet<Purchase> Purchases { get; set; }
+
+
     }
 }
